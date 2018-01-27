@@ -49,30 +49,33 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar01.json').then(response => {
+    axios.get('/json/bantenprov/laju-inflasi-pengeluaran/laju-inflasi-pengeluaran-010.json').then(response => {
 
       var e = response.data;
-      var get = e[0].chartdata.grafik[0];
+      var get = e[0].ilp[0];
 
       let i = 0;
 
-      this.bar.xAxis.data = Object.keys(response.data[0].chartdata.grafik[0].tahun[0]);
-      this.bar.series[0].data = Object.values(response.data[0].chartdata.grafik[0].tahun[0]);
-      this.bar.title.text = response.data[0].chartdata.grafik[0].tingkat + ' ' +response.data[0].chartdata.grafik[0].name;
+      this.bar.xAxis.data = Object.keys(response.data[0].ilp[0].tahun[0]);
+      this.bar.series[0].data = Object.values(response.data[0].ilp[0].tahun[0]);
+      this.bar.title.text = response.data[0].ilp[0].name;
 
       setInterval(() => {
         i++;
         setTimeout(() => {
 
-          this.bar.xAxis.data = Object.keys(response.data[0].chartdata.grafik[i].tahun[0]);
-          this.bar.series[0].data = Object.values(response.data[0].chartdata.grafik[i].tahun[0]);
-          this.bar.title.text = response.data[0].chartdata.grafik[i].tingkat + ' ' + response.data[0].chartdata.grafik[i].name;
-
+          this.bar.xAxis.data = Object.keys(response.data[i].ilp[0].tahun[0]);
+          this.bar.series[0].data = Object.values(response.data[i].ilp[0].tahun[0]);
+          this.bar.title.text = response.data[i].ilp[0].name;
+          console.log(response.data[i].ilp[0].tahun[0]); 
+          console.log(response.data[i].ilp[0].tahun[i]); 
+          
+          
         }, 10);
 
-        if(i ==  response.data[0].chartdata.grafik.length) {
-          i = 0;
-        }
+        //if(i ==  response.data[0].ilp.length) {
+        //  i = 0;
+        //}
       }, 5000);
       this.loading = false;
 
@@ -80,6 +83,5 @@ export default {
     .catch(function(error) {
       // error
     });
-  }
 }
 </script>

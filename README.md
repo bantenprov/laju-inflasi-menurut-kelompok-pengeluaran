@@ -2,11 +2,11 @@
 
 ## Laju Inflasi Menurut Kelompok Pengeluaran di Provinsi Banten
 
-[![Join the chat at https://gitter.im/laju-inflasi-pengeluaran/Lobby](https://badges.gitter.im/laju-inflasi-pengeluaran/Lobby.svg)](https://gitter.im/laju-inflasi-pengeluaran/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/build-status/master)
+[![Join the chat at https://gitter.im/li-pengeluaran/Lobby](https://badges.gitter.im/li-pengeluaran/Lobby.svg)](https://gitter.im/li-pengeluaran/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/build-status/master)
 
-### install via composer
+## install via composer
 
 - Development snapshot
 ```bash
@@ -14,7 +14,7 @@ $ composer require bantenprov/laju-inflasi-menurut-kelompok-pengeluaran:dev:mast
 ```
 - Latest release:
 
-### download via github
+## download via github
 
 ~~~bash
 $ git clone https://github.com/bantenprov/laju-inflasi-menurut-kelompok-pengeluaran.git
@@ -35,7 +35,7 @@ $ git clone https://github.com/bantenprov/laju-inflasi-menurut-kelompok-pengelua
     Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
     Illuminate\Cookie\CookieServiceProvider::class,
     //....
-    Bantenprov\LajuInflasiPengeluaran\LajuInflasiPengeluaranServiceProvider::class,
+    Bantenprov\LIPengeluaran\LIPengeluaranServiceProvider::class,
 
 ```
 #### Tambahkan route di dalam route : `resources/assets/js/routes.js` :
@@ -57,9 +57,9 @@ children: [
   },
   //== ...
   {
-    path: '/dashboard/laju-inflasi-pengeluaran',
+    path: '/dashboard/li-pengeluaran',
     components: {
-      main: resolve => require(['./components/views/bantenprov/laju-inflasi-pengeluaran/DashboardLajuInflasiPengeluaran.vue'], resolve),
+      main: resolve => require(['./components/views/bantenprov/li-pengeluaran/DashboardLIPengeluaran.vue'], resolve),
       navbar: resolve => require(['./components/Navbar.vue'], resolve),
       sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
     },
@@ -77,9 +77,9 @@ component: resolve => require(['./AdminLayout.vue'], resolve),
 children: [
 //== ...
     {
-      path: '/admin/dashboard/laju-inflasi-pengeluaran',
+      path: '/admin/dashboard/li-pengeluaran',
       components: {
-        main: resolve => require(['./components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranAdmin.show.vue'], resolve),
+        main: resolve => require(['./components/bantenprov/li-pengeluaran/LIPengeluaranAdmin.show.vue'], resolve),
         navbar: resolve => require(['./components/Navbar.vue'], resolve),
         sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
       },
@@ -110,7 +110,7 @@ children: [
         //== ...
         {
           name: 'Laju Inflasi Pengeluaran',
-          link: '/dashboard/laju-inflasi-pengeluaran',
+          link: '/dashboard/li-pengeluaran',
           icon: 'fa fa-angle-double-right'
         }
   ]
@@ -121,44 +121,44 @@ children: [
 
 ```javascript
 
-import LajuInflasiPengeluaran from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaran.chart.vue';
-Vue.component('echarts-laju-inflasi-pengeluaran', LajuInflasiPengeluaran);
+import LIPengeluaran from './components/bantenprov/li-pengeluaran/LIPengeluaran.chart.vue';
+Vue.component('echarts-li-pengeluaran', LIPengeluaran);
 
-import LajuInflasiPengeluaranKota from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranKota.chart.vue';
-Vue.component('echarts-laju-inflasi-pengeluaran-kota', LajuInflasiPengeluaranKota);
+import LIPengeluaranKota from './components/bantenprov/li-pengeluaran/LIPengeluaranKota.chart.vue';
+Vue.component('echarts-li-pengeluaran-kota', LIPengeluaranKota);
 
-import LajuInflasiPengeluaranTahun from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranTahun.chart.vue';
-Vue.component('echarts-laju-inflasi-pengeluaran-tahun', LajuInflasiPengeluaranTahun);
+import LIPengeluaranTahun from './components/bantenprov/li-pengeluaran/LIPengeluaranTahun.chart.vue';
+Vue.component('echarts-li-pengeluaran-tahun', LIPengeluaranTahun);
 
-import LajuInflasiPengeluaranAdminShow from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranAdmin.show.vue';
-Vue.component('admin-view-laju-inflasi-pengeluaran-tahun', LajuInflasiPengeluaranAdminShow);
+import LIPengeluaranAdminShow from './components/bantenprov/li-pengeluaran/LIPengeluaranAdmin.show.vue';
+Vue.component('admin-view-li-pengeluaran-tahun', LIPengeluaranAdminShow);
 
 //== Echarts Angka Partisipasi Kasar
 
-import LajuInflasiPengeluaranBar01 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranBar01.vue';
-Vue.component('laju-inflasi-pengeluaran-bar-01', LajuInflasiPengeluaranBar01);
+import LIPengeluaranBar01 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranBar01.vue';
+Vue.component('li-pengeluaran-bar-01', LIPengeluaranBar01);
 
-import LajuInflasiPengeluaranBar02 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranBar02.vue';
-Vue.component('laju-inflasi-pengeluaran-bar-02', LajuInflasiPengeluaranBar02);
+import LIPengeluaranBar02 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranBar02.vue';
+Vue.component('li-pengeluaran-bar-02', LIPengeluaranBar02);
 
 //== mini bar charts
-import LajuInflasiPengeluaranBar03 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranBar03.vue';
-Vue.component('laju-inflasi-pengeluaran-bar-03', LajuInflasiPengeluaranBar03);
+import LIPengeluaranBar03 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranBar03.vue';
+Vue.component('li-pengeluaran-bar-03', LIPengeluaranBar03);
 
-import LajuInflasiPengeluaranPie01 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranPie01.vue';
-Vue.component('laju-inflasi-pengeluaran-pie-01', LajuInflasiPengeluaranPie01);
+import LIPengeluaranPie01 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranPie01.vue';
+Vue.component('li-pengeluaran-pie-01', LIPengeluaranPie01);
 
-import LajuInflasiPengeluaranPie02 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranPie02.vue';
-Vue.component('laju-inflasi-pengeluaran-pie-02', LajuInflasiPengeluaranPie02);
+import LIPengeluaranPie02 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranPie02.vue';
+Vue.component('li-pengeluaran-pie-02', LIPengeluaranPie02);
 
 //== mini pie charts
-import LajuInflasiPengeluaranPie03 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranPie03.vue';
-Vue.component('laju-inflasi-pengeluaran-pie-03', LajuInflasiPengeluaranPie03);
+import LIPengeluaranPie03 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranPie03.vue';
+Vue.component('li-pengeluaran-pie-03', LIPengeluaranPie03);
 ```
 
 #### Untuk publish component vue :
 
 ```bash
-$ php artisan vendor:publish --tag=laju-inflasi-pengeluaran-assets
-$ php artisan vendor:publish --tag=laju-inflasi-pengeluaran-public
+$ php artisan vendor:publish --tag=li-pengeluaran-assets
+$ php artisan vendor:publish --tag=li-pengeluaran-public
 ```

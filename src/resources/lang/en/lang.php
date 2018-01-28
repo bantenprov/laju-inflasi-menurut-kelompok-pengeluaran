@@ -8,13 +8,13 @@ return [
     |--------------------------------------------------------------------------
     |
     | The following language lines are used for development of package
-    | Bantenprov/LajuInflasiPengeluaran
+    | Bantenprov/LIPengeluaran
     |
     */
 
     'author'         => 'bantenprov',
     'email'          => 'developer.bantenprov@gmail.com',
     'package_vendor' => 'Bantenprov',
-    'package_name'   => 'LajuInflasiPengeluaran'
+    'package_name'   => 'LIPengeluaran'
 
 ];

@@ -1,8 +1,8 @@
 <?php
 
-if (! function_exists('pdrbHargaDasar')) {
-    function pdrbHargaDasar()
+if (! function_exists('apKasar')) {
+    function apKasar()
     {
-        return 'Welcome to function pdrbHargaDasar() for Bantenprov\LajuInflasiPengeluaran package';
+        return 'Welcome to function apKasar() for Bantenprov\LIPengeluaran package';
     }
 }

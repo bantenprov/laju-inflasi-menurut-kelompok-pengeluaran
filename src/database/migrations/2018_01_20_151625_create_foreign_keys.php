@@ -8,12 +8,12 @@ class CreateForeignKeys extends Migration {
 
 	public function up()
 	{
-		Schema::table('laju_inflasi_pengeluarans', function(Blueprint $table) {
+		Schema::table('li_pengeluarans', function(Blueprint $table) {
 			$table->foreign('province_id')->references('id')->on('provinces')
 						->onDelete('set null')
 						->onUpdate('restrict');
 		});
-		Schema::table('laju_inflasi_pengeluarans', function(Blueprint $table) {
+		Schema::table('li_pengeluarans', function(Blueprint $table) {
 			$table->foreign('regency_id')->references('id')->on('regencies')
 						->onDelete('set null')
 						->onUpdate('restrict');
@@ -27,11 +27,11 @@ class CreateForeignKeys extends Migration {
 
 	public function down()
 	{
-		Schema::table('laju_inflasi_pengeluarans', function(Blueprint $table) {
-			$table->dropForeign('laju_inflasi_pengeluarans_province_id_foreign');
+		Schema::table('li_pengeluarans', function(Blueprint $table) {
+			$table->dropForeign('li_pengeluarans_province_id_foreign');
 		});
-		Schema::table('laju_inflasi_pengeluarans', function(Blueprint $table) {
-			$table->dropForeign('laju_inflasi_pengeluarans_regency_id_foreign');
+		Schema::table('li_pengeluarans', function(Blueprint $table) {
+			$table->dropForeign('li_pengeluarans_regency_id_foreign');
 		});
 		Schema::table('regencies', function(Blueprint $table) {
 			$table->dropForeign('regencies_province_id_foreign');

@@ -1,1 +1,1 @@
-This is demo view file for Bantenprov\LajuInflasiPengeluaran package using blade template
+This is demo view file for Bantenprov\LIPengeluaran package using blade template

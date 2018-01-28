@@ -115,6 +115,7 @@ children: [
         }
   ]
 },
+
 ```
 
 #### Tambahkan components `resources/assets/js/components.js` :

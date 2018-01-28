@@ -6,7 +6,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/li-pengeluaran/build-status/master)
 
-## install via composer
+### install via composer
 
 - Development snapshot
 ```bash
@@ -14,7 +14,7 @@ $ composer require bantenprov/laju-inflasi-menurut-kelompok-pengeluaran:dev:mast
 ```
 - Latest release:
 
-## download via github
+### download via github
 
 ~~~bash
 $ git clone https://github.com/bantenprov/laju-inflasi-menurut-kelompok-pengeluaran.git

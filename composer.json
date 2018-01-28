@@ -29,7 +29,7 @@
             "src/helpers/helpers.php"
         ],
         "psr-4": {
-            "Bantenprov\\LikPengeluaran\\": "src"
+            "Bantenprov\\LIPengeluaran\\": "src"
         }
     },
     "minimum-stability": "dev"

@@ -1,11 +1,12 @@
 # Laju inflasi menurut kelompok pengeluaran
-Laju Inflasi Menurut Kelompok Pengeluaran di Provinsi Banten
+
+## Laju Inflasi Menurut Kelompok Pengeluaran di Provinsi Banten
 
 [![Join the chat at https://gitter.im/laju-inflasi-pengeluaran/Lobby](https://badges.gitter.im/laju-inflasi-pengeluaran/Lobby.svg)](https://gitter.im/laju-inflasi-pengeluaran/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/laju-inflasi-pengeluaran/build-status/master)
 
-## install via composer
+### install via composer
 
 - Development snapshot
 ```bash
@@ -13,7 +14,7 @@ $ composer require bantenprov/laju-inflasi-menurut-kelompok-pengeluaran:dev:mast
 ```
 - Latest release:
 
-## download via github
+### download via github
 
 ~~~bash
 $ git clone https://github.com/bantenprov/laju-inflasi-menurut-kelompok-pengeluaran.git

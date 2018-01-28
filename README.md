@@ -10,7 +10,7 @@
 
 - Development snapshot
 ```bash
-$ composer require bantenprov/laju-inflasi-menurut-kelompok-pengeluaran:dev:master
+$ composer require bantenprov/laju-inflasi-menurut-kelompok-pengeluaran:dev-master
 ```
 - Latest release:
 

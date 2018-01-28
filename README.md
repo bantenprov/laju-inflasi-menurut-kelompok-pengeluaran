@@ -63,7 +63,7 @@ children: [
       sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
     },
     meta: {
-      title: "AP Kasar"
+      title: "Laju Inflasi Pengeluaran"
     }
   }
 ```
@@ -83,7 +83,7 @@ children: [
         sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
       },
       meta: {
-        title: "AP Kasar"
+        title: "Laju Inflasi Pengeluaran"
       }
     }
 
@@ -108,7 +108,7 @@ children: [
         },
         //== ...
         {
-          name: 'AP Kasar',
+          name: 'Laju Inflasi Pengeluaran',
           link: '/dashboard/laju-inflasi-pengeluaran',
           icon: 'fa fa-angle-double-right'
         }

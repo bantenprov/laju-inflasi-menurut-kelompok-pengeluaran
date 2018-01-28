@@ -3,6 +3,6 @@
 if (! function_exists('pdrbHargaDasar')) {
     function pdrbHargaDasar()
     {
-        return 'Welcome to function pdrbHargaDasar() for Bantenprov\PdrbHargaDasar package';
+        return 'Welcome to function pdrbHargaDasar() for Bantenprov\LajuInflasiPengeluaran package';
     }
 }

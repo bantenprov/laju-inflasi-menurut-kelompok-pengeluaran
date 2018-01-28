@@ -1,14 +1,14 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Exceptions;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Exceptions;
 
 use Exception;
 
 /**
- * The PdrbHargaDasarException class.
+ * The LajuInflasiPengeluaranException class.
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasarException extends Exception
+class LajuInflasiPengeluaranException extends Exception
 {
     //
 }

@@ -56,7 +56,7 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar03.json').then(response => {
+    axios.get('/json/bantenprov/laju-inflasi-pengeluaran/laju-inflasi-pengeluaran03.json').then(response => {
 
       var e = response.data;
       var get = e[0].chartdata.grafik[0];

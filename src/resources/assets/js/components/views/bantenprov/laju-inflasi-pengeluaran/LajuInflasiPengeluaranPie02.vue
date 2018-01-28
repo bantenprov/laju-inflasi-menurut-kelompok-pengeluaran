@@ -89,7 +89,7 @@ export default {
   },
   mounted: function () {
 
-    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar02.json').then(response => {
+    axios.get('/json/bantenprov/laju-inflasi-pengeluaran/laju-inflasi-pengeluaran02.json').then(response => {
       let obj_key = [];
       var datas = response.data;
 

@@ -1,25 +1,25 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Http\Controllers;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Http\Controllers;
 
 /* require */
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Bantenprov\PdrbHargaDasar\Facades\PdrbHargaDasar;
+use Bantenprov\LajuInflasiPengeluaran\Facades\LajuInflasiPengeluaran;
 
 /* Models */
-use Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar\PdrbHargaDasar as PdrbModel;
-use Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar\Province;
-use Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar\Regency;
+use Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran\LajuInflasiPengeluaran as PdrbModel;
+use Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran\Province;
+use Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran\Regency;
 
 /* etc */
 use Validator;
 
 /**
- * The PdrbHargaDasarController class.
+ * The LajuInflasiPengeluaranController class.
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasarController extends Controller
+class LajuInflasiPengeluaranController extends Controller
 {
 
     protected $province;

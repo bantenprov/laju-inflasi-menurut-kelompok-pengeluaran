@@ -1,14 +1,14 @@
 <?php
 
-namespace Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar;
+namespace Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class PdrbHargaDasar extends Model
+class LajuInflasiPengeluaran extends Model
 {
 
-    protected $table = 'pdrb_harga_dasars';
+    protected $table = 'laju_inflasi_pengeluarans';
     public $timestamps = true;
 
     use SoftDeletes;
@@ -18,12 +18,12 @@ class PdrbHargaDasar extends Model
 
     public function getProvince()
     {
-        return $this->hasOne('Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar\Province','id','province_id');
+        return $this->hasOne('Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran\Province','id','province_id');
     }
 
     public function getRegency()
     {
-        return $this->hasOne('Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar\Regency','id','regency_id');
+        return $this->hasOne('Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran\Regency','id','regency_id');
     }
 
 }

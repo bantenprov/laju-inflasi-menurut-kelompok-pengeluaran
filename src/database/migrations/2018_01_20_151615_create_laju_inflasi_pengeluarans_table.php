@@ -3,11 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePdrbHargaDasarsTable extends Migration {
+class CreateLajuInflasiPengeluaransTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('pdrb_harga_dasars', function(Blueprint $table) {
+		Schema::create('laju_inflasi_pengeluarans', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('negara', 191);
 			$table->integer('province_id')->unsigned()->nullable()->index();
@@ -22,6 +22,6 @@ class CreatePdrbHargaDasarsTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('pdrb_harga_dasars');
+		Schema::drop('laju_inflasi_pengeluarans');
 	}
 }

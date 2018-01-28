@@ -4,7 +4,7 @@
     <div class="card mb-3">
       <div class="card-header">Grafik Produk Domestik Regional Bruto</div>
       <div class="card-body">
-        <echarts-pdrb-harga-dasar></echarts-pdrb-harga-dasar>
+        <echarts-laju-inflasi-pengeluaran></echarts-laju-inflasi-pengeluaran>
       </div><!-- /.card-body -->
     </div><!-- /.card -->
 
@@ -13,7 +13,7 @@
         <div class="card mb-3">
           <div class="card-header">Grafik Kota</div>
           <div class="card-body">
-            <echarts-pdrb-harga-dasar-kota></echarts-pdrb-harga-dasar-kota>
+            <echarts-laju-inflasi-pengeluaran-kota></echarts-laju-inflasi-pengeluaran-kota>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
       </div>
@@ -21,7 +21,7 @@
         <div class="card mb-3">
           <div class="card-header">Grafik Tahunan</div>
           <div class="card-body">
-            <echarts-pdrb-harga-dasar-tahun></echarts-pdrb-harga-dasar-tahun>
+            <echarts-laju-inflasi-pengeluaran-tahun></echarts-laju-inflasi-pengeluaran-tahun>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
       </div>

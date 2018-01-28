@@ -1,6 +1,6 @@
 <?php
 
-namespace Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar;
+namespace Bantenprov\LajuInflasiPengeluaran\Models\Bantenprov\LajuInflasiPengeluaran;
 
 
 use Illuminate\Database\Eloquent\Model;

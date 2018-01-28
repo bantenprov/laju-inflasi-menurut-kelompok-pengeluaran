@@ -1,15 +1,15 @@
-<?php namespace Bantenprov\PdrbHargaDasar;
+<?php namespace Bantenprov\LajuInflasiPengeluaran;
 
 use Illuminate\Support\ServiceProvider;
-use Bantenprov\PdrbHargaDasar\Console\Commands\PdrbHargaDasarCommand;
+use Bantenprov\LajuInflasiPengeluaran\Console\Commands\LajuInflasiPengeluaranCommand;
 
 /**
- * The PdrbHargaDasarServiceProvider class
+ * The LajuInflasiPengeluaranServiceProvider class
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasarServiceProvider extends ServiceProvider
+class LajuInflasiPengeluaranServiceProvider extends ServiceProvider
 {
 
     /**
@@ -43,15 +43,15 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('pdrb-harga-dasar', function ($app) {
-            return new PdrbHargaDasar;
+        $this->app->singleton('laju-inflasi-pengeluaran', function ($app) {
+            return new LajuInflasiPengeluaran;
         });
 
-        $this->app->singleton('command.pdrb-harga-dasar', function ($app) {
-            return new PdrbHargaDasarCommand;
+        $this->app->singleton('command.laju-inflasi-pengeluaran', function ($app) {
+            return new LajuInflasiPengeluaranCommand;
         });
 
-        $this->commands('command.pdrb-harga-dasar');
+        $this->commands('command.laju-inflasi-pengeluaran');
     }
 
     /**
@@ -62,8 +62,8 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
     public function provides()
     {
         return [
-            'pdrb-harga-dasar',
-            'command.pdrb-harga-dasar',
+            'laju-inflasi-pengeluaran',
+            'command.laju-inflasi-pengeluaran',
         ];
     }
 
@@ -85,9 +85,9 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
     protected function configHandle()
     {
         $packageConfigPath = __DIR__.'/config/config.php';
-        $appConfigPath     = config_path('pdrb-harga-dasar.php');
+        $appConfigPath     = config_path('laju-inflasi-pengeluaran.php');
 
-        $this->mergeConfigFrom($packageConfigPath, 'pdrb-harga-dasar');
+        $this->mergeConfigFrom($packageConfigPath, 'laju-inflasi-pengeluaran');
 
         $this->publishes([
             $packageConfigPath => $appConfigPath,
@@ -103,10 +103,10 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
     {
         $packageTranslationsPath = __DIR__.'/resources/lang';
 
-        $this->loadTranslationsFrom($packageTranslationsPath, 'pdrb-harga-dasar');
+        $this->loadTranslationsFrom($packageTranslationsPath, 'laju-inflasi-pengeluaran');
 
         $this->publishes([
-            $packageTranslationsPath => resource_path('lang/vendor/pdrb-harga-dasar'),
+            $packageTranslationsPath => resource_path('lang/vendor/laju-inflasi-pengeluaran'),
         ], 'lang');
     }
 
@@ -119,10 +119,10 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
     {
         $packageViewsPath = __DIR__.'/resources/views';
 
-        $this->loadViewsFrom($packageViewsPath, 'pdrb-harga-dasar');
+        $this->loadViewsFrom($packageViewsPath, 'laju-inflasi-pengeluaran');
 
         $this->publishes([
-            $packageViewsPath => resource_path('views/vendor/pdrb-harga-dasar'),
+            $packageViewsPath => resource_path('views/vendor/laju-inflasi-pengeluaran'),
         ], 'views');
     }
 

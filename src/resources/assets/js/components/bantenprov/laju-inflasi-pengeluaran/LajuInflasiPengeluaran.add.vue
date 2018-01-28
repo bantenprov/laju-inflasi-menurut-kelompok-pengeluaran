@@ -123,7 +123,7 @@ export default {
     },
     data() {
         return {
-            pdrb_harga_dasars: [],
+            laju_inflasi_pengeluarans: [],
             provinces: [],
             regencies: {},
             formstate: {},
@@ -154,7 +154,7 @@ export default {
             } else {
               if(this.model.tahun >= 2000 && this.model.tahun <= (new Date()).getFullYear())
               {
-                axios.post("/pdrb-harga-dasar/store", {
+                axios.post("/laju-inflasi-pengeluaran/store", {
                   negara: this.model.negara,
                   province_id: this.model.province_id,
                   kab_kota: this.model.kab_kota,
@@ -165,14 +165,14 @@ export default {
                 .then(response => {
                   if(response.data.type == 'success'){
                     miniToastr.success(response.data.message, response.data.title)
-                    window.location.href = '#/admin/pdrb-harga-dasar/'+response.data.id
+                    window.location.href = '#/admin/laju-inflasi-pengeluaran/'+response.data.id
                   }
                   else{
                     miniToastr.error(response.data.message, response.data.title)
-                    window.location.href = '#/admin/pdrb-harga-dasar/create'
+                    window.location.href = '#/admin/laju-inflasi-pengeluaran/create'
                   }
                 },
-                window.location.href = '#/admin/pdrb-harga-dasar/create')
+                window.location.href = '#/admin/laju-inflasi-pengeluaran/create')
                 .catch((error) => miniToastr.error(error, "Error"));
               }else{
                 miniToastr.error('Tahun tidak sesuai.', 'error');
@@ -190,11 +190,11 @@ export default {
             };
         },
         back() {
-            window.location = '#/admin/pdrb-harga-dasar';
+            window.location = '#/admin/laju-inflasi-pengeluaran';
         }
     },
     mounted: function() {
-        axios.get("/pdrb-harga-dasar/create").then(response => {
+        axios.get("/laju-inflasi-pengeluaran/create").then(response => {
 
             this.provinces = response.data.provinces;
             this.regencies = response.data.regencies;

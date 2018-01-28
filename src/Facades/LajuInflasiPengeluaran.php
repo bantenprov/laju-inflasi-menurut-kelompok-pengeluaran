@@ -1,14 +1,14 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Facades;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * The PdrbHargaDasar facade.
+ * The LajuInflasiPengeluaran facade.
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasar extends Facade
+class LajuInflasiPengeluaran extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -17,6 +17,6 @@ class PdrbHargaDasar extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'pdrb-harga-dasar';
+        return 'laju-inflasi-pengeluaran';
     }
 }

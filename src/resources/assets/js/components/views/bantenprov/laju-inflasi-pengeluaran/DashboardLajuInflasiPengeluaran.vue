@@ -8,7 +8,7 @@
             <div class="media">
               <div class="media-body text-truncate">
                 <div class="card-body">
-                  <pdrb-harga-dasar-bar-03></pdrb-harga-dasar-bar-03>
+                  <laju-inflasi-pengeluaran-bar-03></laju-inflasi-pengeluaran-bar-03>
                 </div><!-- /.card-body -->
               </div>
             </div>
@@ -21,7 +21,7 @@
             <div class="media">
               <div class="media-body text-truncate">
                 <div class="card-body">
-                  <pdrb-harga-dasar-pie-03></pdrb-harga-dasar-pie-03>
+                  <laju-inflasi-pengeluaran-pie-03></laju-inflasi-pengeluaran-pie-03>
                 </div><!-- /.card-body -->
               </div>
             </div>
@@ -55,7 +55,7 @@
               PDRB Harga Dasar Berdasarkan Wilayah
             </div>
             <div class="card-body">
-              <pdrb-harga-dasar-bar-01></pdrb-harga-dasar-bar-01>
+              <laju-inflasi-pengeluaran-bar-01></laju-inflasi-pengeluaran-bar-01>
             </div><!-- /.card-body -->
           </div><!-- /.card -->
 
@@ -70,7 +70,7 @@
               PDRB Harga Dasar Berdasarkan Wilayah
             </div>
             <div class="card-body">
-              <pdrb-harga-dasar-pie-01></pdrb-harga-dasar-pie-01>
+              <laju-inflasi-pengeluaran-pie-01></laju-inflasi-pengeluaran-pie-01>
             </div><!-- /.card-body -->
           </div><!-- /.card -->
 
@@ -86,7 +86,7 @@
             PDRB Harga Dasar Berdasarkan Tahun
           </div>
           <div class="card-body">
-            <pdrb-harga-dasar-pie-02></pdrb-harga-dasar-pie-02>
+            <laju-inflasi-pengeluaran-pie-02></laju-inflasi-pengeluaran-pie-02>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
       </div><!-- /.col -->
@@ -99,7 +99,7 @@
             PDRB Harga Dasar Berdasarkan Tahun
           </div>
           <div class="card-body">
-            <pdrb-harga-dasar-bar-02></pdrb-harga-dasar-bar-02>
+            <laju-inflasi-pengeluaran-bar-02></laju-inflasi-pengeluaran-bar-02>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
 

@@ -1,14 +1,14 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Console\Commands;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Console\Commands;
 
 use Illuminate\Console\Command;
 
 /**
- * The PdrbHargaDasarCommand class.
+ * The LajuInflasiPengeluaranCommand class.
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasarCommand extends Command
+class LajuInflasiPengeluaranCommand extends Command
 {
 
     /**
@@ -16,14 +16,14 @@ class PdrbHargaDasarCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'bantenprov:pdrb-harga-dasar';
+    protected $signature = 'bantenprov:laju-inflasi-pengeluaran';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Demo command for Bantenprov\PdrbHargaDasar package';
+    protected $description = 'Demo command for Bantenprov\LajuInflasiPengeluaran package';
 
     /**
      * Create a new command instance.
@@ -42,6 +42,6 @@ class PdrbHargaDasarCommand extends Command
      */
     public function handle()
     {
-        $this->info('Welcome to command for Bantenprov\PdrbHargaDasar package');
+        $this->info('Welcome to command for Bantenprov\LajuInflasiPengeluaran package');
     }
 }

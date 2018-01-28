@@ -1,12 +1,12 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Contracts;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Contracts;
 
 /**
- * The PdrbHargaDasarInterface interface
+ * The LajuInflasiPengeluaranInterface interface
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-interface PdrbHargaDasarInterface
+interface LajuInflasiPengeluaranInterface
 {
     //
 }

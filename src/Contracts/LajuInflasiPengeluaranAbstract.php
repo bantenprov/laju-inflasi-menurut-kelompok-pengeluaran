@@ -1,12 +1,12 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Contracts;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Contracts;
 
 /**
- * The PdrbHargaDasarAbstract class
+ * The LajuInflasiPengeluaranAbstract class
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-abstract class PdrbHargaDasarAbstract
+abstract class LajuInflasiPengeluaranAbstract
 {
     //
 }

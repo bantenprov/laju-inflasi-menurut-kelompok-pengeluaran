@@ -1,14 +1,14 @@
-<?php namespace Bantenprov\PdrbHargaDasar\Http\Middleware;
+<?php namespace Bantenprov\LajuInflasiPengeluaran\Http\Middleware;
 
 use Closure;
 
 /**
- * The PdrbHargaDasarMiddleware class.
+ * The LajuInflasiPengeluaranMiddleware class.
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasarMiddleware
+class LajuInflasiPengeluaranMiddleware
 {
 
     /**

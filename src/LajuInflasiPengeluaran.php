@@ -1,15 +1,15 @@
-<?php namespace Bantenprov\PdrbHargaDasar;
+<?php namespace Bantenprov\LajuInflasiPengeluaran;
 
 /**
- * The PdrbHargaDasar class.
+ * The LajuInflasiPengeluaran class.
  *
- * @package Bantenprov\PdrbHargaDasar
+ * @package Bantenprov\LajuInflasiPengeluaran
  * @author  bantenprov <developer.bantenprov@gmail.com>
  */
-class PdrbHargaDasar
+class LajuInflasiPengeluaran
 {
     public function welcome()
     {
-        return 'Welcome to Bantenprov\PdrbHargaDasar package';
+        return 'Welcome to Bantenprov\LajuInflasiPengeluaran package';
     }
 }

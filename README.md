@@ -133,7 +133,7 @@ Vue.component('echarts-li-pengeluaran-tahun', LIPengeluaranTahun);
 import LIPengeluaranAdminShow from './components/bantenprov/li-pengeluaran/LIPengeluaranAdmin.show.vue';
 Vue.component('admin-view-li-pengeluaran-tahun', LIPengeluaranAdminShow);
 
-//== Echarts Angka Partisipasi Kasar
+//== Echarts Laju Inflasi Menurut Kelompok Pengeluaran
 
 import LIPengeluaranBar01 from './components/views/bantenprov/li-pengeluaran/LIPengeluaranBar01.vue';
 Vue.component('li-pengeluaran-bar-01', LIPengeluaranBar01);

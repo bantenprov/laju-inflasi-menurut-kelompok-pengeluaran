@@ -1,8 +1,8 @@
 <?php
 
-if (! function_exists('apKasar')) {
-    function apKasar()
+if (! function_exists('liPengeluaran')) {
+    function liPengeluaran()
     {
-        return 'Welcome to function apKasar() for Bantenprov\LIPengeluaran package';
+        return 'Welcome to function liPengeluaran() for Bantenprov\LIPengeluaran package';
     }
 }

@@ -56,9 +56,9 @@ children: [
   },
   //== ...
   {
-    path: '/dashboard/laju-Inflasi-pengeluaran',
+    path: '/dashboard/laju-inflasi-pengeluaran',
     components: {
-      main: resolve => require(['./components/views/bantenprov/laju-Inflasi-pengeluaran/DashboardLajuInflasiPengeluaran.vue'], resolve),
+      main: resolve => require(['./components/views/bantenprov/laju-inflasi-pengeluaran/DashboardLajuInflasiPengeluaran.vue'], resolve),
       navbar: resolve => require(['./components/Navbar.vue'], resolve),
       sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
     },
@@ -76,9 +76,9 @@ component: resolve => require(['./AdminLayout.vue'], resolve),
 children: [
 //== ...
     {
-      path: '/admin/dashboard/laju-Inflasi-pengeluaran',
+      path: '/admin/dashboard/laju-inflasi-pengeluaran',
       components: {
-        main: resolve => require(['./components/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranAdmin.show.vue'], resolve),
+        main: resolve => require(['./components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranAdmin.show.vue'], resolve),
         navbar: resolve => require(['./components/Navbar.vue'], resolve),
         sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
       },
@@ -109,7 +109,7 @@ children: [
         //== ...
         {
           name: 'AP Kasar',
-          link: '/dashboard/laju-Inflasi-pengeluaran',
+          link: '/dashboard/laju-inflasi-pengeluaran',
           icon: 'fa fa-angle-double-right'
         }
   ]
@@ -120,44 +120,44 @@ children: [
 
 ```javascript
 
-import LajuInflasiPengeluaran from './components/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaran.chart.vue';
-Vue.component('echarts-laju-Inflasi-pengeluaran', LajuInflasiPengeluaran);
+import LajuInflasiPengeluaran from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaran.chart.vue';
+Vue.component('echarts-laju-inflasi-pengeluaran', LajuInflasiPengeluaran);
 
-import LajuInflasiPengeluaranKota from './components/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranKota.chart.vue';
-Vue.component('echarts-laju-Inflasi-pengeluaran-kota', LajuInflasiPengeluaranKota);
+import LajuInflasiPengeluaranKota from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranKota.chart.vue';
+Vue.component('echarts-laju-inflasi-pengeluaran-kota', LajuInflasiPengeluaranKota);
 
-import LajuInflasiPengeluaranTahun from './components/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranTahun.chart.vue';
-Vue.component('echarts-laju-Inflasi-pengeluaran-tahun', LajuInflasiPengeluaranTahun);
+import LajuInflasiPengeluaranTahun from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranTahun.chart.vue';
+Vue.component('echarts-laju-inflasi-pengeluaran-tahun', LajuInflasiPengeluaranTahun);
 
-import LajuInflasiPengeluaranAdminShow from './components/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranAdmin.show.vue';
-Vue.component('admin-view-laju-Inflasi-pengeluaran-tahun', LajuInflasiPengeluaranAdminShow);
+import LajuInflasiPengeluaranAdminShow from './components/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranAdmin.show.vue';
+Vue.component('admin-view-laju-inflasi-pengeluaran-tahun', LajuInflasiPengeluaranAdminShow);
 
 //== Echarts Angka Partisipasi Kasar
 
-import LajuInflasiPengeluaranBar01 from './components/views/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranBar01.vue';
-Vue.component('laju-Inflasi-pengeluaran-bar-01', LajuInflasiPengeluaranBar01);
+import LajuInflasiPengeluaranBar01 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranBar01.vue';
+Vue.component('laju-inflasi-pengeluaran-bar-01', LajuInflasiPengeluaranBar01);
 
-import LajuInflasiPengeluaranBar02 from './components/views/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranBar02.vue';
-Vue.component('laju-Inflasi-pengeluaran-bar-02', LajuInflasiPengeluaranBar02);
+import LajuInflasiPengeluaranBar02 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranBar02.vue';
+Vue.component('laju-inflasi-pengeluaran-bar-02', LajuInflasiPengeluaranBar02);
 
 //== mini bar charts
-import LajuInflasiPengeluaranBar03 from './components/views/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranBar03.vue';
-Vue.component('laju-Inflasi-pengeluaran-bar-03', LajuInflasiPengeluaranBar03);
+import LajuInflasiPengeluaranBar03 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranBar03.vue';
+Vue.component('laju-inflasi-pengeluaran-bar-03', LajuInflasiPengeluaranBar03);
 
-import LajuInflasiPengeluaranPie01 from './components/views/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranPie01.vue';
-Vue.component('laju-Inflasi-pengeluaran-pie-01', LajuInflasiPengeluaranPie01);
+import LajuInflasiPengeluaranPie01 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranPie01.vue';
+Vue.component('laju-inflasi-pengeluaran-pie-01', LajuInflasiPengeluaranPie01);
 
-import LajuInflasiPengeluaranPie02 from './components/views/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranPie02.vue';
-Vue.component('laju-Inflasi-pengeluaran-pie-02', LajuInflasiPengeluaranPie02);
+import LajuInflasiPengeluaranPie02 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranPie02.vue';
+Vue.component('laju-inflasi-pengeluaran-pie-02', LajuInflasiPengeluaranPie02);
 
 //== mini pie charts
-import LajuInflasiPengeluaranPie03 from './components/views/bantenprov/laju-Inflasi-pengeluaran/LajuInflasiPengeluaranPie03.vue';
-Vue.component('laju-Inflasi-pengeluaran-pie-03', LajuInflasiPengeluaranPie03);
+import LajuInflasiPengeluaranPie03 from './components/views/bantenprov/laju-inflasi-pengeluaran/LajuInflasiPengeluaranPie03.vue';
+Vue.component('laju-inflasi-pengeluaran-pie-03', LajuInflasiPengeluaranPie03);
 ```
 
 #### Untuk publish component vue :
 
 ```bash
-$ php artisan vendor:publish --tag=laju-Inflasi-pengeluaran-assets
-$ php artisan vendor:publish --tag=laju-Inflasi-pengeluaran-public
+$ php artisan vendor:publish --tag=laju-inflasi-pengeluaran-assets
+$ php artisan vendor:publish --tag=laju-inflasi-pengeluaran-public
 ```

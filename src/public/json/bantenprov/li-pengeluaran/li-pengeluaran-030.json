@@ -1,232 +1,212 @@
 {
+    "2010": [
+      {
+        "provinsi": [
+          {
+            "tingkat": "satu",
+            "wilayah": "Provinsi",
+            "name": "Banten",
+            "data": {
+              "Bahan Makanan": 14.10,
+              "Makanan Jadi, Minuman, Rokok dan Tembakau": 3.76,
+              "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 4.41,
+              "Sandang": 8.43,
+              "Kesehatan": 5.30,
+              "Pendidikan, Rekreasi dan Olah Raga": 3.64,
+              "Transportasi, Komunikasi dan Jasa Keuangan": 1.10
+            }
+          }
+        ],
+        "Umum": [
+          {
+            "tingkat": "pusat",
+            "wilayah": "Banten",
+            "name": "Umum",
+            "data": {
+              "Umum": 6.10
+            }
+          }
+        ]
+      }
+    ],
     "2011": [
-      {
-        "SD/MI/Paket A": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 104.12
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 102.57
-          }
-        ],
-        "SMP/MTS/Paket B": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 104.12
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 102.57
-          }
-        ],
-        "SMA/SMK/MA/Paket C": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 60.1
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 64.9
-          }
-        ]
-      }
-    ],
+        {
+          "provinsi": [
+            {
+              "tingkat": "satu",
+              "wilayah": "Provinsi",
+              "name": "Banten",
+              "data": {
+                "Bahan Makanan": 4.76,
+                "Makanan Jadi, Minuman, Rokok dan Tembakau": 2.95,
+                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 3.16,
+                "Sandang": 7.02,
+                "Kesehatan": 4.03,
+                "Pendidikan, Rekreasi dan Olah Raga": 6.44,
+                "Transportasi, Komunikasi dan Jasa Keuangan": 0.02
+              }
+            }
+          ],
+          "Umum": [
+            {
+              "tingkat": "pusat",
+              "wilayah": "Banten",
+              "name": "Umum",
+              "data": {
+                "Umum": 3.45
+              }
+            }
+          ]
+        }
+      ],
     "2012": [
-      {
-        "SD/MI/Paket A": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 104.79
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 87.96
-          }
-        ],
-        "SMP/MTS/Paket B": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 69.65
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 104.33
-          }
-        ],
-        "SMA/SMK/MA/Paket C": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 89.49
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 68.8
-          }
-        ]
-      }
-    ],
+        {
+          "provinsi": [
+            {
+              "tingkat": "satu",
+              "wilayah": "Provinsi",
+              "name": "Banten",
+              "data": {
+                "Bahan Makanan": 3.88,
+                "Makanan Jadi, Minuman, Rokok dan Tembakau": 8.24,
+                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 2.39,
+                "Sandang": 3.39,
+                "Kesehatan": 4.97,
+                "Pendidikan, Rekreasi dan Olah Raga": 9.11,
+                "Transportasi, Komunikasi dan Jasa Keuangan": 1.79
+              }
+            }
+          ],
+          "Umum": [
+            {
+              "tingkat": "pusat",
+              "wilayah": "Banten",
+              "name": "Umum",
+              "data": {
+                "Umum": 4.37
+              }
+            }
+          ]
+        }
+      ],
     "2013": [
-      {
-        "SD/MI/Paket A": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 107.47
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 89.85
-          }
-        ],
-        "SMP/MTS/Paket B": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 63.32
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 107.71
-          }
-        ],
-        "SMA/SMK/MA/Paket C": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 85.96
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 66.61
-          }
-        ]
-      }
-    ],
+        {
+          "provinsi": [
+            {
+              "tingkat": "satu",
+              "wilayah": "Provinsi",
+              "name": "Banten",
+              "data": {
+                "Bahan Makanan": 11.41,
+                "Makanan Jadi, Minuman, Rokok dan Tembakau": 9.85,
+                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 6.54,
+                "Sandang": 0.83,
+                "Kesehatan": 5.68,
+                "Pendidikan, Rekreasi dan Olah Raga": 7.47,
+                "Transportasi, Komunikasi dan Jasa Keuangan": 17.15
+              }
+            }
+          ],
+          "Umum": [
+            {
+              "tingkat": "pusat",
+              "wilayah": "Banten",
+              "name": "Umum",
+              "data": {
+                "Umum": 9.65
+              }
+            }
+          ]
+        }
+      ],
     "2014": [
-      {
-        "SD/MI/Paket A": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 109.89
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 89.55
-          }
-        ],
-        "SMP/MTS/Paket B": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 72.94
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 108.87
-          }
-        ],
-        "SMA/SMK/MA/Paket C": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 88.63
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 74.26
-          }
-        ]
-      }
-    ],
+        {
+          "provinsi": [
+            {
+              "tingkat": "satu",
+              "wilayah": "Provinsi",
+              "name": "Banten",
+              "data": {
+                "Bahan Makanan": 12.63,
+                "Makanan Jadi, Minuman, Rokok dan Tembakau": 12.57,
+                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 8.75,
+                "Sandang": 4.47,
+                "Kesehatan": 4.49,
+                "Pendidikan, Rekreasi dan Olah Raga": 4.33,
+                "Transportasi, Komunikasi dan Jasa Keuangan": 12.93
+              }
+            }
+          ],
+          "Umum": [
+            {
+              "tingkat": "pusat",
+              "wilayah": "Banten",
+              "name": "Umum",
+              "data": {
+                "Umum": 10.20
+              }
+            }
+          ]
+        }
+      ],
     "2015": [
-      {
-        "SD/MI/Paket A": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 112.07
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 92.27
-          }
-        ],
-        "SMP/MTS/Paket B": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 69.76
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 110.5
-          }
-        ],
-        "SMA/SMK/MA/Paket C": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": 91.17
-          },
-          {
-            "tingkat": "pusat",
-            "wilayah": "Negara",
-            "name": "Indonesia",
-            "data": 78.02
-          }
-        ]
-      }
-    ]
+        {
+          "provinsi": [
+            {
+              "tingkat": "satu",
+              "wilayah": "Provinsi",
+              "name": "Banten",
+              "data": {
+                "Bahan Makanan": 3.82,
+                "Makanan Jadi, Minuman, Rokok dan Tembakau": 8.18,
+                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 4.56,
+                "Sandang": 1.90,
+                "Kesehatan": 12.78,
+                "Pendidikan, Rekreasi dan Olah Raga": 6.05,
+                "Transportasi, Komunikasi dan Jasa Keuangan": -2.20
+              }
+            }
+          ],
+          "Umum": [
+            {
+              "tingkat": "pusat",
+              "wilayah": "Banten",
+              "name": "Umum",
+              "data": {
+                "Umum": 4.29
+              }
+            }
+          ]
+        }
+      ],
+    "2016": [
+        {
+          "provinsi": [
+            {
+              "tingkat": "satu",
+              "wilayah": "Provinsi",
+              "name": "Banten",
+              "data": {
+                "Bahan Makanan": 6.93,
+                "Makanan Jadi, Minuman, Rokok dan Tembakau": 5.07,
+                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 0.97,
+                "Sandang": 1.70,
+                "Kesehatan": 2.86,
+                "Pendidikan, Rekreasi dan Olah Raga": 2.21,
+                "Transportasi, Komunikasi dan Jasa Keuangan": -1.92
+              }
+            }
+          ],
+          "Umum": [
+            {
+              "tingkat": "pusat",
+              "wilayah": "Banten",
+              "name": "Umum",
+              "data": {
+                "Umum": 2.94
+              }
+            }
+          ]
+        }
+      ]
   }

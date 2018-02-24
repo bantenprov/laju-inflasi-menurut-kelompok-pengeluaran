@@ -133,43 +133,8 @@ children: [
                         name: 'Laju Inflasi Pengeluaran',
                         link: '/admin/dashboard/li-pengeluaran',
                         icon: 'fa fa-angle-right'
-                    }
-
-                ]
-            },
-            {
-                name: 'Contents',
-                link: '/admin/contents',
-                icon: 'fa fa-angle-double-right'
-            },
-            {
-                name: 'Configurations',
-                link: '/admin/configurations',
-                icon: 'fa fa-angle-double-right'
-            },
-            {
-                name: 'Reports',
-                icon: 'fa fa-angle-double-right',
-                child: [
-                    {
-                        name: 'Reports',
-                        link: '/admin/reports',
-                        icon: 'fa fa-angle-right'
                     },
-                    {
-                        name: 'System reports',
-                        link: '/admin/reports/system-reports',
-                        icon: 'fa fa-angle-right'
-                    },
-                    {
-                        name: 'System logs',
-                        link: '/admin/reports/system-logs',
-                        icon: 'fa fa-angle-right'
-                    }
-                ]
-            }
-        ]
-    },
+                    //==..
 ```
 
 #### Tambahkan components `resources/assets/js/components.js` :

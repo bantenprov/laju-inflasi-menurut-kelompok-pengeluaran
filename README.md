@@ -114,8 +114,27 @@ children: [
           icon: 'fa fa-angle-double-right'
         }
   ]
-},
-
+},{
+        name: 'Admin',
+        icon: 'fa fa-lock',
+        childType: 'collapse',
+        childItem: [
+            {
+                name: 'Dashboard',
+                icon: 'fa fa-angle-double-right',
+                child: [
+                    {
+                        name: 'Home',
+                        link: '/admin/dashboard/home',
+                        icon: 'fa fa-angle-right'
+                    },
+                    //== ...
+                    {
+                        name: 'Laju Inflasi Pengeluaran',
+                        link: '/admin/dashboard/li-pengeluaran',
+                        icon: 'fa fa-angle-right'
+                    },
+                    //==..
 ```
 
 #### Tambahkan components `resources/assets/js/components.js` :

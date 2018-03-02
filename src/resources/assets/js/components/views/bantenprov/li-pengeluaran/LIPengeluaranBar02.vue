@@ -127,7 +127,6 @@ export default {
             {value:0, name:''},
             {value:0, name:''},
             {value:0, name:''},
-            {value:0, name:''},
             {value:0, name:''}
           ],
           barWidth: 30,
@@ -148,7 +147,7 @@ export default {
       }
     }
   },
-  mounted: function () {
+ mounted: function () {
     axios.get('/json/bantenprov/li-pengeluaran/li-pengeluaran-020.json').then(response => {
 
       let obj_key = [];
@@ -165,10 +164,10 @@ export default {
       }
 
       Object.values(datas[0])[0].forEach((data, index) => {
-        this.bar.xAxis.data[index] = data.wilayah + ' ' + data.name
-        this.bar.series[0].data[index].name   = data.wilayah + ' ' + data.name
+        this.bar.xAxis.data[index] = data.name
+        this.bar.series[0].data[index].name   = data.name
         this.bar.series[0].data[index].value  = data.data
-        this.bar.title.text = 'Tahun ' + Object.keys(datas[0])[0]
+        this.bar.title.text = 'Laju Inflasi Kelompok Pengeluaran Tahun  ' + Object.keys(datas[0])[0]
       })
 
       var i = 1;
@@ -176,9 +175,9 @@ export default {
       // perulangan
       setInterval(() => {
         Object.values(datas[0])[i].forEach((data, index) => {
-          this.bar.series[0].data[index].name   = data.wilayah + ' ' + data.name
+          this.bar.series[0].data[index].name   = data.name
           this.bar.series[0].data[index].value  = data.data
-          this.bar.title.text = 'Tahun ' + Object.keys(datas[0])[i]
+          this.bar.title.text = 'Laju Inflasi Kelompok Pengeluaran Tahun ' + Object.keys(datas[0])[i]
         });
 
         i++;

@@ -71,7 +71,7 @@ export default {
         },
         series: [{
           type:'pie',
-          data: [{},{},{},{},{},{}].sort(function (a, b) { return a.value - b.value; }),
+          data: [{},{},{},{},{},{},{}].sort(function (a, b) { return a.value - b.value; }),
           radius: '55%',
           roseType: 'radius',
           cursor: 'default',
@@ -111,7 +111,7 @@ export default {
       for(var first = 0; first < Object.keys(response.data[0].chartdata.grafik[0].tahun[0]).length; first++){
         this.pie.series[0].data[first].value = Object.values(response.data[0].chartdata.grafik[0].tahun[0])[first]
         this.pie.series[0].data[first].name = Object.keys(response.data[0].chartdata.grafik[0].tahun[0])[first]
-        this.pie.title.text = response.data[0].chartdata.grafik[0].tingkat + ' ' + response.data[0].chartdata.grafik[0].name
+        this.pie.title.text = response.data[0].chartdata.grafik[0].index
       }
 
       this.pie.visualMap.max = Math.max.apply(null,Object.values(response.data[0].chartdata.grafik[0].tahun[0])) + 2000
@@ -125,7 +125,7 @@ export default {
             this.pie.series[0].data[k].value = Object.values(response.data[0].chartdata.grafik[i].tahun[0])[k]
             this.pie.series[0].data[k].name = Object.keys(response.data[0].chartdata.grafik[i].tahun[0])[k]
 
-            this.pie.title.text = response.data[0].chartdata.grafik[i].tingkat + ' ' + response.data[0].chartdata.grafik[i].name
+            this.pie.title.text = response.data[0].chartdata.grafik[i].index
 
             this.pie.visualMap.max = Math.max.apply(null,Object.values(response.data[0].chartdata.grafik[i].tahun[0])) + 6000
             this.pie.visualMap.min = Math.min.apply(null,Object.values(response.data[0].chartdata.grafik[i].tahun[0])) - 6000

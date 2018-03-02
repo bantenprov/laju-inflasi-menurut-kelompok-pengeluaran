@@ -1,212 +1,120 @@
-{
-    "2010": [
-      {
-        "provinsi": [
-          {
-            "tingkat": "satu",
-            "wilayah": "Provinsi",
-            "name": "Banten",
-            "data": {
-              "Bahan Makanan": 14.10,
-              "Makanan Jadi, Minuman, Rokok dan Tembakau": 3.76,
-              "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 4.41,
-              "Sandang": 8.43,
-              "Kesehatan": 5.30,
-              "Pendidikan, Rekreasi dan Olah Raga": 3.64,
-              "Transportasi, Komunikasi dan Jasa Keuangan": 1.10
-            }
-          }
-        ],
-        "Umum": [
-          {
-            "tingkat": "pusat",
-            "wilayah": "Banten",
-            "name": "Umum",
-            "data": {
-              "Umum": 6.10
-            }
-          }
-        ]
-      }
-    ],
-    "2011": [
+[
+  {
+    "chartdata": {
+      "grafik": [
         {
-          "provinsi": [
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Bahan Makanan ",
+          "tahun": [
             {
-              "tingkat": "satu",
-              "wilayah": "Provinsi",
-              "name": "Banten",
-              "data": {
-                "Bahan Makanan": 4.76,
-                "Makanan Jadi, Minuman, Rokok dan Tembakau": 2.95,
-                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 3.16,
-                "Sandang": 7.02,
-                "Kesehatan": 4.03,
-                "Pendidikan, Rekreasi dan Olah Raga": 6.44,
-                "Transportasi, Komunikasi dan Jasa Keuangan": 0.02
-              }
-            }
-          ],
-          "Umum": [
-            {
-              "tingkat": "pusat",
-              "wilayah": "Banten",
-              "name": "Umum",
-              "data": {
-                "Umum": 3.45
-              }
+              "2010": 14.10,
+              "2011": 4.76,
+              "2012": 3.88,
+              "2013": 11.41,
+              "2014": 12.63,
+              "2015": 3.82,
+              "2016": 6.93
             }
           ]
-        }
-      ],
-    "2012": [
+        },
         {
-          "provinsi": [
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Makanan Jadi",
+          "tahun": [
             {
-              "tingkat": "satu",
-              "wilayah": "Provinsi",
-              "name": "Banten",
-              "data": {
-                "Bahan Makanan": 3.88,
-                "Makanan Jadi, Minuman, Rokok dan Tembakau": 8.24,
-                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 2.39,
-                "Sandang": 3.39,
-                "Kesehatan": 4.97,
-                "Pendidikan, Rekreasi dan Olah Raga": 9.11,
-                "Transportasi, Komunikasi dan Jasa Keuangan": 1.79
-              }
-            }
-          ],
-          "Umum": [
-            {
-              "tingkat": "pusat",
-              "wilayah": "Banten",
-              "name": "Umum",
-              "data": {
-                "Umum": 4.37
-              }
+              "2010": 3.76,
+              "2011": 2.95,
+              "2012": 8.24,
+              "2013": 9.85,
+              "2014": 12.57,
+              "2015": 8.18,
+              "2016": 5.07
             }
           ]
-        }
-      ],
-    "2013": [
+        },
         {
-          "provinsi": [
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Perumahan, air, listrik",
+          "tahun": [
             {
-              "tingkat": "satu",
-              "wilayah": "Provinsi",
-              "name": "Banten",
-              "data": {
-                "Bahan Makanan": 11.41,
-                "Makanan Jadi, Minuman, Rokok dan Tembakau": 9.85,
-                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 6.54,
-                "Sandang": 0.83,
-                "Kesehatan": 5.68,
-                "Pendidikan, Rekreasi dan Olah Raga": 7.47,
-                "Transportasi, Komunikasi dan Jasa Keuangan": 17.15
-              }
-            }
-          ],
-          "Umum": [
-            {
-              "tingkat": "pusat",
-              "wilayah": "Banten",
-              "name": "Umum",
-              "data": {
-                "Umum": 9.65
-              }
+            "2010": 4.41,
+            "2011": 3.16,
+            "2012": 2.39,
+            "2013": 6.54,
+            "2014": 8.75,
+            "2015": 4.56,
+            "2016": 0.97
             }
           ]
-        }
-      ],
-    "2014": [
+        },
         {
-          "provinsi": [
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Sandang",
+          "tahun": [
             {
-              "tingkat": "satu",
-              "wilayah": "Provinsi",
-              "name": "Banten",
-              "data": {
-                "Bahan Makanan": 12.63,
-                "Makanan Jadi, Minuman, Rokok dan Tembakau": 12.57,
-                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 8.75,
-                "Sandang": 4.47,
-                "Kesehatan": 4.49,
-                "Pendidikan, Rekreasi dan Olah Raga": 4.33,
-                "Transportasi, Komunikasi dan Jasa Keuangan": 12.93
-              }
-            }
-          ],
-          "Umum": [
-            {
-              "tingkat": "pusat",
-              "wilayah": "Banten",
-              "name": "Umum",
-              "data": {
-                "Umum": 10.20
-              }
+            "2010": 8.37,
+            "2011": 7.02,
+            "2012": 3.93,
+            "2013": 0.83,
+            "2014": 4.73,
+            "2015": 1.90,
+            "2016": 1.70
             }
           ]
-        }
-      ],
-    "2015": [
+        },
         {
-          "provinsi": [
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Kesehatan",
+          "tahun": [
             {
-              "tingkat": "satu",
-              "wilayah": "Provinsi",
-              "name": "Banten",
-              "data": {
-                "Bahan Makanan": 3.82,
-                "Makanan Jadi, Minuman, Rokok dan Tembakau": 8.18,
-                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 4.56,
-                "Sandang": 1.90,
-                "Kesehatan": 12.78,
-                "Pendidikan, Rekreasi dan Olah Raga": 6.05,
-                "Transportasi, Komunikasi dan Jasa Keuangan": -2.20
-              }
-            }
-          ],
-          "Umum": [
-            {
-              "tingkat": "pusat",
-              "wilayah": "Banten",
-              "name": "Umum",
-              "data": {
-                "Umum": 4.29
-              }
+             "2010": 5.30,
+            "2011": 4.03,
+            "2012": 4.97,
+            "2013": 5.68,
+            "2014": 4.49,
+            "2015": 12.78,
+            "2016": 2.86
             }
           ]
-        }
-      ],
-    "2016": [
+        },
         {
-          "provinsi": [
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Pendidikan, Rekreasi dan Olahraga",
+          "tahun": [
             {
-              "tingkat": "satu",
-              "wilayah": "Provinsi",
-              "name": "Banten",
-              "data": {
-                "Bahan Makanan": 6.93,
-                "Makanan Jadi, Minuman, Rokok dan Tembakau": 5.07,
-                "Perumahan, Air, Listrik, Gas dan Bahan Bakar": 0.97,
-                "Sandang": 1.70,
-                "Kesehatan": 2.86,
-                "Pendidikan, Rekreasi dan Olah Raga": 2.21,
-                "Transportasi, Komunikasi dan Jasa Keuangan": -1.92
-              }
+             "2010": 3.64,
+            "2011": 6.44,
+            "2012": 9.11,
+            "2013": 7.47,
+            "2014": 4.33,
+            "2015": 6.05,
+            "2016": 2.21
             }
-          ],
-          "Umum": [
+          ]
+        },
+        {
+          "tingkat": "Provinsi",
+          "name": "Banten",
+          "title": "Laju Inflasi Transportasi, Komunikasi",
+          "tahun": [
             {
-              "tingkat": "pusat",
-              "wilayah": "Banten",
-              "name": "Umum",
-              "data": {
-                "Umum": 2.94
-              }
+            "2010": 1.10,
+            "2011": 0.02,
+            "2012": 1.79,
+            "2013": 17.15,
+            "2014": 12.93,
+            "2015": -2.20,
+            "2016": -1.92
             }
           ]
         }
       ]
+    }
   }
+]

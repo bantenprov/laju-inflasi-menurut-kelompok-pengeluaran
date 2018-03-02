@@ -78,7 +78,6 @@ export default {
             {value:0, name:''},
             {value:0, name:''},
             {value:0, name:''},
-            {value:0, name:''},
             {value:0, name:''}
           ].sort(function (a, b) { return a.value - b.value; }),
           radius: '55%',
@@ -131,18 +130,18 @@ export default {
       // set nilai awal
 
       Object.values(datas[0])[0].forEach((data, index) => {
-        this.pie.series[0].data[index].name   = data.wilayah + ' ' + data.name + ' - ' + data.data.toLocaleString('EN')
+        this.pie.series[0].data[index].name   = data.name.toLocaleString('EN')
         this.pie.series[0].data[index].value  = data.data
-        this.pie.title.text = 'Tahun ' + Object.keys(datas[0])[0]
+        this.pie.title.text = 'Laju Inflasi Kelompok Pengeluaran Tahun ' + Object.keys(datas[0])[0]
       })
 
       var i = 1;
 
       setInterval(() => {
         Object.values(datas[0])[i].forEach((data, index) => {
-          this.pie.series[0].data[index].name   = data.wilayah + ' ' + data.name + ' - ' + data.data.toLocaleString('EN')
+          this.pie.series[0].data[index].name   = data.name.toLocaleString('EN')
           this.pie.series[0].data[index].value  = data.data
-          this.pie.title.text = 'Tahun ' + Object.keys(datas[0])[i]
+          this.pie.title.text = 'Laju Inflasi Kelompok Pengeluaran Tahun ' + Object.keys(datas[0])[i]
         });
 
         i++;

@@ -55,7 +55,7 @@ export default {
         },
         xAxis: {
           show: true,
-          data: ['0','0','0','0','0','0'],
+          data: ['0','0','0','0','0','0','0'],
           axisLabel: {
             show: true,
             fontSize: 8,
@@ -139,7 +139,7 @@ export default {
       }
     }
   },
-  mounted: function () {
+ mounted: function () {
     axios.get('/json/bantenprov/li-pengeluaran/li-pengeluaran-010.json').then(response => {
 
       var e = response.data;
@@ -149,7 +149,7 @@ export default {
 
       this.bar.xAxis.data = Object.keys(response.data[0].chartdata.grafik[0].tahun[0]);
       this.bar.series[0].data = Object.values(response.data[0].chartdata.grafik[0].tahun[0]);
-      this.bar.title.text = response.data[0].chartdata.grafik[0].tingkat + ' ' +response.data[0].chartdata.grafik[0].name;
+      this.bar.title.text = response.data[0].chartdata.grafik[0].title;
 
       setInterval(() => {
         i++;
@@ -157,7 +157,7 @@ export default {
         setTimeout(() => {
           this.bar.xAxis.data = Object.keys(response.data[0].chartdata.grafik[i].tahun[0]);
           this.bar.series[0].data = Object.values(response.data[0].chartdata.grafik[i].tahun[0]);
-          this.bar.title.text = response.data[0].chartdata.grafik[i].tingkat + ' ' + response.data[0].chartdata.grafik[i].name;
+          this.bar.title.text = response.data[0].chartdata.grafik[i].title;
         }, 10);
 
         if(i ==  response.data[0].chartdata.grafik.length) {

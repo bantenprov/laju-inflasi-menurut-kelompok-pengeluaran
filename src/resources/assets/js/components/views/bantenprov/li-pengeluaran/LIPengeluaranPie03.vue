@@ -71,7 +71,7 @@ export default {
         },
         series: [{
           type:'pie',
-          data: [{},{},{},{},{},{}].sort(function (a, b) { return a.value - b.value; }),
+          data: [{},{},{},{},{},{},{}].sort(function (a, b) { return a.value - b.value; }),
           radius: '55%',
           roseType: 'radius',
           cursor: 'default',
@@ -103,39 +103,45 @@ export default {
       }
     }
   },
-  mounted: function () {
-    axios.get('/json/bantenprov/li-pengeluaran/li-pengeluaran-030.json').then(response => {
+   mounted: function () {
+    axios.get('/json/bantenprov/li-pengeluaran/li-pengeluaran-020.json').then(response => {
 
-      let i = 0;
+      let obj_key = [];
+      var datas = response.data;
 
-      for(var first = 0; first < Object.keys(response.data[0].chartdata.grafik[0].tahun[0]).length; first++){
-        this.pie.series[0].data[first].value = Object.values(response.data[0].chartdata.grafik[0].tahun[0])[first]
-        this.pie.series[0].data[first].name = Object.keys(response.data[0].chartdata.grafik[0].tahun[0])[first]
-        this.pie.title.text = response.data[0].chartdata.grafik[0].tingkat + ' ' + response.data[0].chartdata.grafik[0].name
+      function removeDuplicates(arr){
+        var unique_array = []
+        for(var i = 0;i < arr.length; i++){
+          if(unique_array.indexOf(arr[i]) == -1){
+            unique_array.push(arr[i])
+          }
+        }
+        return unique_array
       }
 
-      this.pie.visualMap.max = Math.max.apply(null,Object.values(response.data[0].chartdata.grafik[0].tahun[0])) + 2000
-      this.pie.visualMap.min = Math.min.apply(null,Object.values(response.data[0].chartdata.grafik[0].tahun[0])) - 2000
+      // set nilai awal
+
+      Object.values(datas[0])[0].forEach((data, index) => {
+        this.pie.series[0].data[index].name   = data.name + data.data.toLocaleString('EN')
+        this.pie.series[0].data[index].value  = data.data
+        this.pie.title.text = 'Laju Inflasi Pengeluaran Tahun ' + Object.keys(datas[0])[0]
+      })
+
+      var i = 1;
 
       setInterval(() => {
+        Object.values(datas[0])[i].forEach((data, index) => {
+          this.pie.series[0].data[index].name   = data.name + data.data.toLocaleString('EN')
+          this.pie.series[0].data[index].value  = data.data
+          this.pie.title.text = 'Laju Inflasi Pengeluaran Tahun ' + Object.keys(datas[0])[i]
+        });
+
         i++;
 
-        setTimeout(() => {
-          for(var k = 0; k < Object.keys(response.data[0].chartdata.grafik[0].tahun[0]).length; k++){
-            this.pie.series[0].data[k].value = Object.values(response.data[0].chartdata.grafik[i].tahun[0])[k]
-            this.pie.series[0].data[k].name = Object.keys(response.data[0].chartdata.grafik[i].tahun[0])[k]
-
-            this.pie.title.text = response.data[0].chartdata.grafik[i].tingkat + ' ' + response.data[0].chartdata.grafik[i].name
-
-            this.pie.visualMap.max = Math.max.apply(null,Object.values(response.data[0].chartdata.grafik[i].tahun[0])) + 6000
-            this.pie.visualMap.min = Math.min.apply(null,Object.values(response.data[0].chartdata.grafik[i].tahun[0])) - 6000
-          }
-        }, 1000);
-
-        if(i ==  response.data[0].chartdata.grafik.length) {
+        if(i == Object.keys(datas[0]).length) {
           i = 0;
         }
-      }, 5000);
+      }, 4000)
     })
     .catch(function(error) {
       // error
